@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloripaLar Construções</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: #004d40;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header img {
+            max-height: 80px;
+        }
+
+        nav {
+            background: #00796b;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .banner {
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            color: #004d40;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.05);
+        }
+
+        .sobre {
+            background: #e0f2f1;
+            padding: 40px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        footer {
+            background: #004d40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <img src="logo.png" alt="Logo FloripaLar Construções">
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <a href="#casa">A Casa</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        Seu novo lar espera por você
+    </section>
+
+    <!-- Seção Casa -->
+    <section class="section" id="casa">
+        <h2>A Casa dos Seus Sonhos</h2>
+        <p>Projetada com elegância e conforto, nossa casa modelo traz espaços amplos, modernos e pensados para toda a família.</p>
+    </section>
+
+    <!-- Galeria -->
+    <section class="section" id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="galeria">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994" alt="Casa 1">
+            <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6" alt="Casa 2">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227" alt="Casa 3">
+            <img src="https://images.unsplash.com/photo-1599423300746-b62533397364" alt="Casa 4">
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="section sobre" id="sobre">
+        <h2>Sobre a FloripaLar Construções</h2>
+        <p>Na <strong>FloripaLar Construções</strong> , sabemos que ter um lar é mais que ter um teto, é ter um lugar para chamar de seu, um refúgio 
+		para construir memórias. É por isso que nos dedicamos a tornar o 
+		sonho da casa própria uma realidade palpável para você e sua família.
+		Oferecemos soluções em construção que combinam qualidade, acessibilidade e o conforto que você merece. Nosso objetivo é simplificar o caminho até
+		a sua nova casa, com projetos pensados para o seu bem-estar e opções que cabem no seu bolso.
+
+Venha construir o seu amanhã com a gente!</p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>📍 Florianópolis - SC | 📞 (48) 6912-5867 | ✉️ contato@floripalar.com</p>
+        <p>&copy; 2025 FloripaLar Construções - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
